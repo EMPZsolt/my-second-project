@@ -54,9 +54,10 @@ footer {
 }
 
 .player {
-  background-color: lightblue;
+  background-color: #ade6d0;
   float: left;
   width: 45%;
+  margin-top: 5rem;
 }
 
 #player-image {
@@ -64,9 +65,10 @@ footer {
 }
 
 .computer {
-  background-color: lightcoral;
+  background-color: #f09d80b0;
   float: right;
   width: 45%;
+  margin-top: 5rem;
 }
 
 #computer-image {
