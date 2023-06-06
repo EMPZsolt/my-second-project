@@ -80,23 +80,31 @@ footer {
 .player {
   background-color: #ade6d0;
   float: left;
-  width: 45%;
-  margin-top: 2rem;
+  width: 47%;
+  height: fit-content;
+  font-size: 12px;
+  margin-top: 4rem;
   margin-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 #player-image {
-  width: 75%;
+  width: 55%;
+  height: inherit;
 }
 
 .computer {
   background-color: #f09d80b0;
   float: right;
-  width: 45%;
-  margin-top: 2rem;
+  width: 47%;
+  height: fit-content;
+  font-size: 12px;
+  margin-top: 4rem;
   margin-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 #computer-image {
-  width: 75%;
+  width: 55%;
+  height: inherit;
 }
