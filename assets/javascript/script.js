@@ -2,10 +2,9 @@
  * Declare constants for the DOM elements
  * and possible choices
  */
-
 const buttons = document.getElementsByClassName("control");
 const playerScore = document.getElementById("player-score");
-const computerScore = documnet.getElementById("computer-score");
+const computerScore = document.getElementById("computer-score");
 const playerImage = document.getElementById("player-image");
 const computerImage = document.getElementById("computer-image");
 const messages = document.getElementById("messages");
@@ -39,10 +38,23 @@ function playGame(playerChoice) {
  */
 function checkWinner(playerChoice, computerChoice) {
     if (playerChoice === computerChoice) {
-        return tie;
+        return "tie";
     } else if ((playerChoice === "rock" && computerChoice === "scissors") || (playerChoice === "paper" && computerChoice === "rock") || (playerChoice === "scissors" && computerChoice === "paper")) {
         return "player";
     } else {
         return "computer";
+    }
+}
+
+/* The updateScores function*/
+function updateScores(result) {
+    if (result === "player") {
+        playerScore.textContent = parseInt(playerScore.textContent) + 1;
+        messages.textContent = "Great! You Win! :D";
+    } else if (result === "computer") {
+        computerScore.textContent = parseInt(computerScore.textContent) + 1;
+        messages.textContent = "Sorry! Computer Wins! :(";
+    } else {
+        messages.textContent = "Opps! It's a tie!"
     }
 }
