@@ -46,26 +46,35 @@ footer {
 .control {
   display: inline;
   margin: 2px;
-  width: 80px;
-  height: 40px;
+  width: 120px;
+  height: 50px;
 }
 
 #rock {
   color: #000;
   background-color: #dd89c5;
+  font-family: "Press Start 2P", sans-serif;
 }
 
 #paper {
   color: #000;
   background-color: #6aadd0;
+  font-family: "Press Start 2P", sans-serif;
 }
 
 #scissors {
   color: #000;
   background-color: #dfd375;
+  font-family: "Press Start 2P", sans-serif;
 }
 
-#message {
+#messages {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
   height: 20px;
 }
 
