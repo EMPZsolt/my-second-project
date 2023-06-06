@@ -40,6 +40,7 @@ footer {
   margin-right: auto;
   margin-top: 1%;
   text-align: center;
+  padding-top: 2%;
 }
 
 .control {
@@ -47,6 +48,21 @@ footer {
   margin: 2px;
   width: 80px;
   height: 40px;
+}
+
+#rock {
+  color: #000;
+  background-color: #dd89c5;
+}
+
+#paper {
+  color: #000;
+  background-color: #6aadd0;
+}
+
+#scissors {
+  color: #000;
+  background-color: #dfd375;
 }
 
 #message {
