@@ -1,7 +1,10 @@
-# Marisa & Zsolt wedding website
-## [my-first-project](https://empzsolt.github.io/my-first-project/)
-This website was created for the wedding of Marisa and Zsolt. The main purpose is to let their family, friends and the world know that they are getting married. In addition it serves as a source of other related information, such as a detailed program, the wedding venue, the planned honeymoon and the application (rsvp) for the wedding.
-![A screenshot of this project from a mockup sreenshot generator and it represents how responsive the different pages of the website](./assets/images/responsive-img.webp)
+# Rock - Paper - Scissors
+## [my-second-project](https://empzsolt.github.io/my-second-project-/)
+The simple "Rock, Paper, Scissors" is an interesting game. As we used to settle disputes in the past, now it offers an easily accessible online entertainment. In its current version, the fight is against a randomly choosing computer, which ensures a fair game.
+
+The game users can relive their childhood and test their patience and luck during a easy game. It can help promote problem-solving thinking. Finally, it can cause happy moments for people of all ages.
+
+![A screenshot of this project from a mockup screenshot generator and it represents how responsive the different pages of the website](./assets/images/responsive.webp)
 
 ## Contents
 - [Design](#design)
