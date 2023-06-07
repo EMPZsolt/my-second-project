@@ -8,38 +8,6 @@ The game users can relive their childhood and test their patience and luck durin
 
 ## Contents
 - [Design](#design)
-     * Color Scheme
-     * Typography
-     * Imagery
-     * Features
-     * Features
-- Technologies Used
-     * Languages Used
-     * Libraries & Programs Used
-- Deployment and Local Development
-     * Deployment
-     * Local Deployment
-          * How to Fork
-          * How to Clone
-- Testing
-     * Bugs
-     * W3C Validator
-     * Lighthouse
-          * Home page / Index page
-          * Schedule page
-          * Location page
-          * Honeymoon page
-          * RSVP page
-          * Thank You page
-- Credits
-     * Code Used
-     * Content
-     * Media
-          * Hotel images
-          * Honeymoon images
-          * RSVP icons
-     * Acknowledgments
-
      * [Color Scheme](#color-scheme)
      * [Typography](#typography)
      * [Imagery](#imagery)
@@ -73,62 +41,41 @@ The game users can relive their childhood and test their patience and luck durin
      * [Acknowledgments](#acknowledgments)
 
 ## Design
-
-### Color Scheme
-![Image of the website's backgroundcolors](./assets/images/background-img.webp)
-The website uses a palette of warm pastel colors that perfectly match the wedding atmosphere. The color palette was created with the help of the Coolors website.
 ### Typography
-Google Fonts was used for the following fonts:
-- Dancing Script is a lively casual script where the letters bounce and change size slightly. It is used for the cover text of the hero image and all the headings on the pages.
-- Crimson Text is a font family for book production in the tradition of beautiful oldstyle typefaces. It is used for the basic body texts on the pages. 
-- Caveat is a handwriting type family. It is used for the countdown clock title.
+Google Fonts was used for the following font:
+- Press Start 2P is a bitmap font based on the font design from 1980s Namco arcade games. It works best at sizes of 8px, 16px and other multiples of 8. Although the design of uppercase letters and digits dates back to Atari's "Sprint" (1977), the specific glyph forms in this TrueType conversion are based on those from "Return of Ishtar" (1986), one of the first games to include and regularly use lowercase as well as uppercase letters in its screen font. 
 ### Imagery
-The hero image and the images of the contact people are self-made images. The hotel's logo, three images of the hotel and three locations of the honeymoon were taken from public websites. I have credited these in the credits section.
+- I found the introductory rock-paper-scissors image on a public website. I cut the various items from the introductory picture. I have credited this in the credits section.
 ### Features
-- Logo and Navigation Bar
-     * Featured on all 5 pages, the full responsive navigation bar includes links to the Logo with an animated icon, Home page, Schedule page, Location page, Honeymoon page and Rsvp application page and is identical in each page to allow for easy navigation.
-     * This section will allow the user to easly navigate from page to page across all devices without having to revert back to the pervious page via the 'back' button.
-     * For transparent and easy selection, the navigation links are underlined and highlighted with color.
-     ![A screenshot of the navigation bar](./assets/images/nav-bar.webp)
-- The Hero image
-     * The hero image contains a photo with a text overlay and a countdown clock that highlights Marisa and Zsolt's love.
-     * This part attracts the user's attention with a zoom in animation and puts the couple in the center.
-     * The countdown clock specifically draws attention to the proximity of the event.
-     ![A srceenshot of the hero image, the text content and the countdown clock](./assets/images/hero-img.webp)
+- Header
+     * It is located at the top of the web page and contains the name of the game supplemented with font awesome icons. The icons represent the given items, their colors are the same as the colors seen in the introductory image, thereby strengthening the connection between them, and they are also animated to indicate the nature of the elements. The choice of font is also emphasized here, which is reminds of an arcade game.
+     * This section is intended to inform the user about the topic of the page.
+     ![A screenshot of the header](./assets/images/header.webp)
+- The game options
+     * The game options use interactive buttons to choose between three items: Rock, Paper, Scissors. Furthermore, the colors of the buttons harmonize with the colors of the items shown in the introductory image.
+     * This area clearly present the choices if the user wants to play.
+     ![A srceenshot of the game options](./assets/images/options.webp)
+- The game results
+     * As soon as the user has selected a button, the symbol that belonged to the button will appear on the player's display, on the left side of the screen.
+     * A random symbol generated by JavaScript code appears on the computer display, on the right side of the screen. At the same time, the code decides who the winner is based on the entered rules.
+     * A small message pops up between the chosen symbols and the game option buttons, telling the player who the winner is. Furthermore, the scores are updated on the player's or computer's display.
+     * The result is obvious and the explanation of the points is clear and clearly visible to the player, making the game completely transparent.
+     ![A srceenshot of the game results](./assets/images/result.webp)
 - The Footer
-     * In the footer section located the contacts, so the members of the wedding party.
-     * Introducing the members with a separate photo and their contact information.
+     * The footer presents the rules of the game.
+     * Knowing the rules is indispensable for the player to understand and enjoy the game.
      ![A sreenshot of the footer](./assets/images/footer.webp)
-- Schedule page
-     * The schedule section is designed to inform the user about the detailed wedding program.
-     * It also informs the dress code.
-     ![A sreenshot of the schedule page](./assets/images/scedule.webp)
-- Location page
-     * The location section presents the hotel where the wedding will take place.
-     * In addition to the location logo, three on-site photos, and Google Maps location, there is also a link embedded in the name of the hotel, which leads to their official website, informing the visitor.
-     ![A sreenshot of the location page](./assets/images/location.webp)
-- Honeymoon page
-     * The honeymoon page simply and concisely describes the locations, complete with pictures and duration.
-     * It also contains a text message which purpose is to thank the guests for their presence and hint at the possibility of contributing.
-     ![A sreenshot of the honeymoon page](./assets/images/honeymoon.webp)
-- RSVP Form
-     * This page allows the user to register for the wedding. The user must enter his/her name, which day he/she wishes to participate, and what menu he/she would like to eat.
-     * Different icons help to separate the different question sections for easier overview.
-     * He/she can only apply after he/she have entered all the required information. The submit button is represented by a love letter image.
-     ![A sreenshot of the rsvp](./assets/images/rsvp.webp)
-- Thank You page
-     * This page pops up after successful registration. It contains a thank you note and says that the home page will automatically return. 
-     ![A screenshot of the thank-you page](./assets/images/thank-you.webp)
 - Features Left to Implement
-     * A page about the story of Marisa and Zsolt, how they met, how they fell in love. This can be combined with a photo gallery or a video.
-     * A financial contribution option could be added to the honeymoon page so the guests can support the couple for their honeymoon.
+     * Possibility of further development:
+          - by adding additional items, for example: Lizard, Spok, or inventing completely new characters
+          - by adding user vs user mode, connect two users to play online
+     
 ### Accessibility
 During the coding, I made sure that the website was as user-friendly as possible. I achieved this by:
 - Using Semantic HTML.
 - Using descriptive alt attributes on images on the site.
 - Providing information for screen readers where there are icons used and no text.
 - Ensuring that there is a sufficient colour contrast throughout the site.
-- Ensuring menus are accessible by marking the current page as current for screen readers.
 ## Technologies Used
 ### Languages Used
 HTML and CSS were used to create this website. There is also JavaScript in the code, but it is from an external source.
