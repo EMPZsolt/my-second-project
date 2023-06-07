@@ -11,14 +11,17 @@
 </head>
 
 <body>
+    <!--The header for the game - contain the name of the game with font awesome icons to represent the choices in different colors-->
     <header>
         <h1 class="heading">Rock<i class="fa-solid fa-hand-back-fist fa-bounce" style="color: #dd89c5;"></i> Paper<i
                 class="fa-solid fa-hand fa-beat" style="color: #6aadd0;"></i> Scissors<i
                 class="fa-solid fa-hand-scissors fa-flip" style="color: #dfd375;"></i></h1>
     </header>
 
+    <!--The game section - contain a choice div, a message div, an actual game divs with the scores and the chosen image of the item-->
     <section class="game-area">
 
+        <!--Make your choise div - contain tree buttons with the colored items matching with the header and the representing image below-->
         <div>
             <p>Make your choice:</p>
             <button aria-label="rock" data-choice="0" class="control" id="rock">Rock</button>
@@ -26,19 +29,32 @@
             <button aria-label="scissors" data-choice="2" class="control" id="scissors">Scissors</button>
         </div>
 
+        <!--The messages div - providing the result messages to the user-->
         <div id="messages"></div>
 
-        <div class="player">
-            <h2 class="scores">Your Score: <span id="player-score">0</span></h2>
-            <img id="player-image" src="assets/images/rps.webp" alt="Rock Paper Scissors">
-        </div>
+       <!--The game zone div - wrapping the actual player and computer divs with the versus text between -->
+        <div id="game-zone">
 
-        <div class="computer">
-            <h2 class="scores">Computer: <span id="computer-score">0</span></h2>
-            <img id="computer-image" src="assets/images/rps.webp" alt="Rock Paper Scissors">
+             <!--The actual player div - cointan the player div on the left side with the actual scores and showing the chosen img-->
+            <div class="player">
+                <h2 class="scores">Your Score: <span id="player-score">0</span></h2>
+                <img id="player-image" src="assets/images/rps.webp" alt="Rock Paper Scissors">
+            </div>
+
+            <!--The versus div - versus text between the two player-->
+            <div id="versus">
+                <p>Vs.</p>
+            </div>
+
+            <!--The actual computer div - cointan the computer div on the right side with the actual scores and showing the chosen img-->
+            <div class="computer">
+                <h2 class="scores">Computer: <span id="computer-score">0</span></h2>
+                <img id="computer-image" src="assets/images/rps.webp" alt="Rock Paper Scissors">
+            </div>
         </div>
     </section>
 
+    <!--The footer - contain the rules for the game-->
     <footer>
         <h3>Rules</h3>
         <p>Rock blunts Scissors | Paper covers Rock | Scissors cut paper</p>

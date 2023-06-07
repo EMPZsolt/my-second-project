@@ -36,7 +36,7 @@ footer {
 /*Game area*/
 
 .game-area {
-  width: 75%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -78,10 +78,24 @@ footer {
   height: 20px;
 }
 
+#game-zone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-bottom: 6rem;
+}
+
+#versus {
+  margin-left: 1%;
+  margin-top: 5%;
+}
+
 .player {
   background-color: #ade6d0;
   float: left;
-  width: 47%;
+  width: 46%;
   height: fit-content;
   font-size: 10px;
   margin-top: 4rem;
@@ -97,7 +111,7 @@ footer {
 .computer {
   background-color: #f09d80b0;
   float: right;
-  width: 47%;
+  width: 46%;
   height: fit-content;
   font-size: 10px;
   margin-top: 4rem;
