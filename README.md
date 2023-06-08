@@ -31,9 +31,6 @@ The game users can relive their childhood and test their patience and luck durin
      * [Code Used](#code-used)
      * [Content](#content)
      * [Media](#media)
-          * [Hotel images](#hotel-images)
-          * [Honeymoon images](#honeymoon-images)
-          * [RSVP icons](#rsvp-icons)
      * [Acknowledgments](#acknowledgments)
 
 ## Design
@@ -145,7 +142,8 @@ Final lighthouse testing:
  ### Code Used
  The constant elements, the event listeners for the buttons and the playGame function come from the CodeInstitute sample portfolio project.
  ### Content
-- The basic structure for the HTML and the basic sytle comes from the CodeInstitute sample portfolio project.
+- The basic structure for the HTML and the some sytle comes from the CodeInstitute sample portfolio project.
+- The icons in the header were taken from Font Awesome.
  ### Media
  - The [introductory image](https://www.vecteezy.com/vector-art/691497-rock-paper-scissors-neon-icons) is from a public website.
  - I cut the various items from the introductory picture.
