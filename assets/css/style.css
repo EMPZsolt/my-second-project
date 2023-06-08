@@ -51,19 +51,16 @@ footer {
 }
 
 #rock {
-  color: #000;
   background-color: #dd89c5;
   font-family: "Press Start 2P", sans-serif;
 }
 
 #paper {
-  color: #000;
   background-color: #6aadd0;
   font-family: "Press Start 2P", sans-serif;
 }
 
 #scissors {
-  color: #000;
   background-color: #dfd375;
   font-family: "Press Start 2P", sans-serif;
 }

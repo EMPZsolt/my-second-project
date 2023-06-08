@@ -26,12 +26,7 @@ The game users can relive their childhood and test their patience and luck durin
      * [W3C Validator](#w3c-validator)
      * [JSHint JavaScript Validator](#jshint-javascript-validator)
      * [Lighthouse](#lighthouse)
-          * [Home page / Index page](#home-page--index-page)
-          * [Schedule page](#schedule-page)
-          * [Location page](#location-page)
-          * [Honeymoon page](#honeymoon-page)
-          * [RSVP page](#rsvp-page)
-          * [Thank You page](#thank-you-page)
+          * [Index page](#index-page)
 - [Credits](#credits)
      * [Code Used](#code-used)
      * [Content](#content)
@@ -152,22 +147,10 @@ Final lighthouse testing:
  ### Content
 - The basic structure for the HTML and the basic sytle comes from the CodeInstitute sample portfolio project.
  ### Media
- #### Hotel images
- - [First picture](https://www.wedaways.com/properties/borgo-san-felice/)
- - [Second picture](https://www.meetingecongressi.com/en/hotel/castelnuovo_berardenga/160/relais_borgo_san_felice.htm)
- - [Third Picture](https://www.audleytravel.com/italy/tuscany/accommodation/borgo-san-felice)
- - [Borgo San Felice Logo](https://www.mariacandidagentile.com/en/bespoke-fragrances/borgo-san-felice/)
- #### Honeymoon images
- - [Napa Valley](https://www.thedrinksbusiness.com/2022/09/napa-valley-like-a-ghost-town-this-summer/)
- - [Bora bora](https://www.forbes.com/sites/debbikickham/2019/07/31/the-best-hotels-in-bora-bora/?sh=3ac109757efc)
- - [Singapore](https://www.escape.com.au/destinations/asia/singapore/24-things-that-will-surprise-you-about-singapore/news-story/3d092fcdef21f52791332497b367a584)
- #### RSVP icons
- - [Left side icons](https://www.flaticon.com/)
- - [Submit button](https://www.pinterest.com/pin/671740100661320986/)
-The rest of the picture is my own.
- ### Acknowledgments
+ - The [introductory image](https://www.vecteezy.com/vector-art/691497-rock-paper-scissors-neon-icons) is from a public website.
+ - I cut the various items from the introductory picture.
  I would like to acknowledge the following people who helped me along the way in completing my first milestone project:
  - My future wife, who gave me ideas and supported me through the project.
  - My Mentor, Graeme Taylor, who showed the direction, helped and encouraged me.
- - The Tutor system, to help me fixing the Iframe location. 
+ - Matt Rudge, who gave the example for the whole project.
  - Thank you to entire Code Isntitute for making my development possible.
