@@ -142,13 +142,13 @@ Final lighthouse testing:
  ### Code Used
  The constant elements, the event listeners for the buttons and the playGame function come from the CodeInstitute sample portfolio project.
  ### Content
-- The basic structure for the HTML and the some sytle comes from the CodeInstitute sample portfolio project.
+- The basic structure for the HTML and some sytle comes from the CodeInstitute sample portfolio project.
 - The icons in the header were taken from Font Awesome.
  ### Media
  - The [introductory image](https://www.vecteezy.com/vector-art/691497-rock-paper-scissors-neon-icons) is from a public website.
  - I cut the various items from the introductory picture.
  ### Acknowledgments
- I would like to acknowledge the following people who helped me along the way in completing my first milestone project:
+ I would like to acknowledge the following people who helped me along the way in completing my second milestone project:
  - My future wife, who gave me ideas and supported me through the project.
  - My Mentor, Graeme Taylor, who showed the direction, helped and encouraged me.
  - Matt Rudge, who gave the example for the whole project.
