@@ -24,6 +24,7 @@ The game users can relive their childhood and test their patience and luck durin
 - [Testing](#testing)
      * [Bugs](#bugs)
      * [W3C Validator](#w3c-validator)
+     * [JSHint JavaScript Validator](#jshint-javascript-validator)
      * [Lighthouse](#lighthouse)
           * [Home page / Index page](#home-page--index-page)
           * [Schedule page](#schedule-page)
@@ -78,22 +79,20 @@ During the coding, I made sure that the website was as user-friendly as possible
 - Ensuring that there is a sufficient colour contrast throughout the site.
 ## Technologies Used
 ### Languages Used
-HTML and CSS were used to create this website. There is also JavaScript in the code, but it is from an external source.
+HTML, CSS and JavaScript were used to create this website.
 ### Libraries & Programs Used
 Git - For version control.
 Github - To save and store the files for the website.
-ColorSpace - To select the colour palette for the site.
 Google Fonts - To import the fonts used on the website.
 Font Awesome / Flaticon / Pinterest - For the iconography on the website.
 Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
-TickCounter - To use the countdown clock.
 Tiny PNG - To compress images.
 FreeConvert - To compress images in the webp format.
 Am I Responsive? - To show the website image on a range of devices.
 Paint - To cut the images to the right size.
 ## Deployment and Local Development
 ### Deployment
-The site is deployed using GitHub Pages. Visit the deployed site [here](https://empzsolt.github.io/my-first-project/). To deploy using GitHub pages:
+The site is deployed using GitHub Pages. Visit the deployed site [here](https://empzsolt.github.io/my-second-project-/). To deploy using GitHub pages:
  1. Login or Sign Up to GitHub.
  2. Open the project repository.
  3. Click on "Settings" on the navigation bar under the repository title.
@@ -118,93 +117,40 @@ Type 'git clone' into the terminal and then paste the link you copied in step 3.
 ## Testing
 Testing took place continuously during the entire construction. I used Chrome's developer tools during the build to try out new ideas and prevent or, if necessary, fix problems.
 During the development, I used Google's developer tools to ensure everything worked as expected, to successfully discover bugs, determine their origin, and fix them.
-- I tested that this page works in different browsers: Microsoft Edge, Google Chrome, Firefox.
+- I tested playing this game in different browsers: Microsoft Edge, Google Chrome, Firefox.
+- I confirmed that this game results are always correct.
 - I confirmed that this project is responsive, functions on all standard screen sizes using the devtools device toolbar.
-- I confirmed that the navigation, header, cover text, contacts, schedule, location, honeymoon and the rsvp are all readable and easy to understand.
-- I have confirmed that the form works: requires entires in every field and the submit button works leading to the thank-you page.
-The following issues were raised during my mid project meeting with my mentor:
-- He drew my attention to the fact that the header needs to be widened, for the sake of a more balanced appearance. That's why I increased the height from 3 rem to 4 rem.
-- He advised me to fix the validator error caused by the countdown clock by moving the style declarations to the style.ccs file. Also, if I can, I should replace it with another clock, since the demo logo in the corner of the it doesn't look good. In the end I did that.
-- He indicated that the footer was too close to the bottom of the page and it would look better if I move it up, as I had already done with the top part. I solved this with a simple style declaration: padding: 10px 0;.
-- On the location page, he suggested that I look for a short informational text about the hotel, thereby telling the guests more about the accommodation. I copied the relevant lines from the hotel's information page.
-- On the rsvp form, he noticed that the allergy input field can be set by visitors and this can easily cause confusion, so he asked me to set it to fixed. In the relevant css attribute selector, I set resize: none; sytle declaration.
-- For the rsvp form, he suggested that I attach a textual confirmation to the submit image about what the button means, for the sake of clarity. That's why I added a label element to the submit image with the text submit.
-- He advised that by submitting the rsvp form, a thank you page should appear, which would automatically return to the main page after a certain period of time. That's why I created a new page, thank-you.html, which thanks the visitor for applying and informs that the site will soon return to its home page. All I had to do was set the following values ​​in the meta data:
-'meta http-equiv="refresh" content="10; url=index.html"'
-- He suggested that the names of all my uploaded images should be in lowercase letters. So I re-uploaded a few pictures with small initials.
+- I confirmed that the header, game options, game results and the footer are all readable and easy to understand.
 ### Bugs
-- When I first time used the font awesome icons and they didn't show up. I later realized that these were not free icons, so I replaced as many as I could find to be reasonably similar. This happend with the main logo in the header. The rest I replaced with similar images. This was the solution is the rsvp page, where the images reprezenting the different section of the qestions.
-- When I used the iframe element for showing the hotel location it showed a broken sign and said the google rejecting the connection. It turned out that I copied the google search url as the source and not the correct google map source.
-- The first time I tried responsive design, it became apparent that the footer contact people could not stay together at a smaller aspect ratio and broke the balance, and the images didn't keep their proportions either. First of all, at a smaller aspect ratio, I introduced two lines, those avoiding fragmentation and overcrowding, and used 'object-fit: cover;' style declaration to keep the aspect ratio on the pictures. 
-- On the honeymoon page, the pictures of the locations also caused problems at smaller screen sizes. After a while, they ran into each other or the ratios simply weren't good. So I decided to switch from the horizontal to the vertical positioning at a smaller screen size. I achieved this by changing the value of display to block.
-- There were also problems with keeping the images in position on the display of smaller devices on the rsvp page. I was able to compensate for this by adding additional sytle declarations, such as height and margin changes.
-- I had to find a countdown clock and download it to get more effect of the main page. But the first one I found and applied was unfortunately only a demo version and the html validator also threw an error on it. The reason for the error was that the size details and setting of the frame was in the iframe code. So I replaced these styles with an id attribute and transferred the style declarations to the style.css page. This solved the error problem, but since there was still a demo label in the corner of the clock, I decided to replace it with another one. I found a suitable one on the TickCounter site.
+- The first time I changed the font, the text hung over one of the buttons in the game options. This is how I increased the original size settings of the buttons.
+- At first, I did not notice that the name of the score collector on both displays was "Your scores". Only after a few tests did the mistyping become apparent.
+- When I decided to put a versus text between the two displays, I couldn't manage to keep it centered and responsive. Then I created a wrapper div for the game zone and set display to flex , flex-direction to row and justify-content to center . 
+- The JavaScript code did not want to work before the first run. When I reviewed the code, I found a typo in the constants.
+- With the appearance of the scissors symbol, the display size always became a little smaller. I solved the problem by resizing the image.
 ### W3C Validator
 The W3C validator was used to validate the HTML. It was also used to validate CSS in the style.css file.
-- No errors were returned when passing through the official [W3C HTML Validator](./assets/images/w3c-html-validator.webp)
+- No errors were returned when passing through the official [W3C HTML Validator](./assets/images/html-validator.webp)
 - No errors were found when passing through the official [CSS Validator](./assets/images/css-validator.webp)
+### JSHint JavaScript Validator
+The JSHint JavaScript Validator was used to validate the JavaScript code.
+- No errors were returned when passing through the official [JSHint JavaScript Validator](./assets/images/js-validator.webp), but 15 warnings appeared, the vast majority of which indicate that I am using a keyword introduced in the ECMAScript 6 (ES6) version, and on one occasion that I am using a function inside a loop, which can be confusing. Despite all this, the game works perfectly.
 ### Lighthouse
 I used Lighthouse within the Chrome Developer Tools to allow me to test the performance, accessibility, best practices and SEO of the website.
-#### Home page / Index page
+#### Index page
 Final lighthouse testing:
-- [Desktop size](./assets/images/lighthouse-homepage-destop-final.webp)
+- [Desktop size](./assets/images/lighthouse-desktop-final.webp)
       Suggestions:
-      1. A long cache lifetime can speed up repeat visits to your page. - So considering the circumstances, I converted the images to the smallest possible size and webp format.
-      2. Screen reader users rely on frame titles to describe the contents of frames. - In this case, with a downloaded javaScript-based countdown clock, I couldn't set a title for the iframe. However, I considered the effectiveness to be much more important, so I kept it.
-- [Mobile size](./assets/images/lighthouse-homepage-mobil-final.webp)
+      1. Polyfills and transforms enable legacy browsers to use new JavaScript features. However, many aren't necessary for modern browsers. For your bundled JavaScript, adopt a modern script deployment strategy using module/nomodule feature detection to reduce the amount of code shipped to modern browsers, while retaining support for legacy browsers. - Despite the problem, the game works perfectly.
+      2. Set an explicit width and height on image elements to reduce layout shifts and improve CLS. - I didn't use specific numbers to scale the images to keep them responsive.
+- [Mobile size](./assets/images/lighthouse-mobile-final.webp)
       Suggestions:
-      1. Consider adding `preconnect` or `dns-prefetch` resource hints to establish early connections to important third-party origins. - These elements are required for proper design.
-      2. A long cache lifetime can speed up repeat visits to your page. - So considering the circumstances, I converted the images to the smallest possible size and webp format.
-      3. Screen reader users rely on frame titles to describe the contents of frames. - In this case, with a downloaded javaScript-based countdown clock, I couldn't set a title for the iframe. However, I considered the effectiveness to be much more important, so I kept it.
-#### Schedule page
-Final lighthouse testing:
-- [Desktop size](./assets/images/lighthouse-schedule-destop-final.webp)
-      Suggestions: None
-- [Mobile size](./assets/images/lighthouse-schedule-mobil-final.webp)
-      Suggestions:
-      1. A long cache lifetime can speed up repeat visits to your page. - So considering the circumstances, I converted the images to the smallest possible size and webp format.
-      2. Consider reducing the time spent parsing, compiling and executing JS. You may find delivering smaller JS payloads helps with this. - At the current level, I can't touch the JavaScript code and this element is important for the design.
-#### Location page
-Final lighthouse testing:
-- [Desktop size](./assets/images/lighthouse-location-destop-final.webp)
-      Suggestions:
-      1. A long cache lifetime can speed up repeat visits to your page. - So considering the circumstances, I converted the images to the smallest possible size and webp format.
-- [Mobile size](./assets/images/lighthouse-location-mobil-final.webp)
-      Suggestions:
-      1. Serve images that are appropriately-sized to save cellular data and improve load time. - So considering the circumstances, I converted the images to the smallest possible size and webp format.
-      2. A long cache lifetime can speed up repeat visits to your page. - So considering the circumstances, I converted the images to the smallest possible size and webp format.
-#### Honeymoon page
-Final lighthouse testing:
-- [Desktop size](./assets/images/lighthouse-honeymoon-destop-final.webp)
-      Suggestions:
-      1. A long cache lifetime can speed up repeat visits to your page. - So considering the circumstances, I converted the images to the smallest possible size and webp format.
-- [Mobile size](./assets/images/lighthouse-honeymoon-mobil-final.webp)
-      Suggestions:
-      1. Serve images that are appropriately-sized to save cellular data and improve load time. - So considering the circumstances, I converted the images to the smallest possible size and webp format.
-      2. A long cache lifetime can speed up repeat visits to your page. - So considering the circumstances, I converted the images to the smallest possible size and webp format.
-#### RSVP page
-Final lighthouse testing:
-- [Desktop size](./assets/images/lighthouse-rsvp-destop-final.webp)
-      Suggestions:
-      1. A long cache lifetime can speed up repeat visits to your page. - So considering the circumstances, I converted the images to the smallest possible size and webp format.
-- [Mobile size](./assets/images/lighthouse-rsvp-mobil-final.webp)
-      Suggestions:
-      1. A long cache lifetime can speed up repeat visits to your page. - So considering the circumstances, I converted the images to the smallest possible size and webp format.
-#### Thank You page
-Final lighthouse testing:
-- [Desktop size](./assets/images/lighthouse-thank-you-destop-final.webp)
-      Suggestions:
-      1. Users do not expect a page to refresh automatically, and doing so will move focus back to the top of the page. This may create a frustrating or confusing experience. - This page is designed to thank and provide feedback to registrants. Furthermore, it is indicated that the page is temporary and returns to the home page.
-- [Mobile size](./assets/images/lighthouse-thank-you-mobil-final.webp)
-      Suggestions:
-      1. Users do not expect a page to refresh automatically, and doing so will move focus back to the top of the page. This may create a frustrating or confusing experience. - This page is designed to thank and provide feedback to registrants. Furthermore, it is indicated that the page is temporary and returns to the home page.
+      1. Polyfills and transforms enable legacy browsers to use new JavaScript features. However, many aren't necessary for modern browsers. For your bundled JavaScript, adopt a modern script deployment strategy using module/nomodule feature detection to reduce the amount of code shipped to modern browsers, while retaining support for legacy browsers. - Despite the problem, the game works perfectly.
+      2. Set an explicit width and height on image elements to reduce layout shifts and improve CLS. - I didn't use specific numbers to scale the images to keep them responsive.
  ## Credits
  ### Code Used
- The countdown clock (JavaScript code) from Tickcounter.
+ The constant elements, the event listeners for the buttons and the playGame function come from the CodeInstitute sample portfolio project.
  ### Content
-- The textual content of the Schedule and the Honeymoon page is partially taken from our original wedding site: [Budu and Zsolt](https://www.marisaandzsolt.ch/en) 
-- The hotel description on the location page comes from the [hotel's official website](https://www.borgosanfelice.it/en/index).
- 
+- The basic structure for the HTML and the basic sytle comes from the CodeInstitute sample portfolio project.
  ### Media
  #### Hotel images
  - [First picture](https://www.wedaways.com/properties/borgo-san-felice/)

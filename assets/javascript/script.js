@@ -55,6 +55,6 @@ function updateScores(result) {
         computerScore.textContent = parseInt(computerScore.textContent) + 1;
         messages.textContent = "Sorry! Computer Wins! :(";
     } else {
-        messages.textContent = "Opps! It's a tie!"
+        messages.textContent = "Opps! It's a tie!";
     }
 }
