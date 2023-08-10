@@ -17,7 +17,7 @@ The game users can relive their childhood and test their patience and luck durin
      * [Libraries & Programs Used](#libraries--programs-used)
 - [Deployment and Local Development](#deployment-and-local-development)  
      * [Deployment](#deployment)
-     * [Local Deployment](#local-development)
+     * [Local Development](#local-development)
           * [How to Fork](#how-to-fork)
           * [How to Clone](#how-to-clone)
 - [Testing](#testing)
@@ -94,14 +94,14 @@ The site is deployed using GitHub Pages. Visit the deployed site [here](https://
  8. Your URL will be displayed above "Source".
 ### Local Development
 #### How to Fork
-To fork the Bully-Book-Club repository:
+To fork the Rock - Paper - Scissors repository:
 1. Log in (or sign up) to Github.
-2. Go to the repository for this project, kera-cudmore/Bully-Book-Club.
+2. Go to the repository for this project, EMPZsolt/my-second-project-.
 3. Click the Fork button in the top right corner.
 #### How to Clone
-To clone the Bully-Book-Club repository:
+To clone the Rock - Paper - Scissors repository:
 Log in (or sign up) to GitHub.
-Go to the repository for this project, kera-cudmore/Bully-Book-Club.
+Go to the repository for this project, EMPZsolt/my-second-project-.
 Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
@@ -144,6 +144,7 @@ Final lighthouse testing:
  ### Content
 - The basic structure for the HTML and some sytle comes from the CodeInstitute sample portfolio project.
 - The icons in the header were taken from Font Awesome.
+- I used some structure ideas and parts for the README file from kera-cudmore/Bully-Book-Club.
  ### Media
  - The [introductory image](https://www.vecteezy.com/vector-art/691497-rock-paper-scissors-neon-icons) is from a public website.
  - I cut the various items from the introductory picture.
