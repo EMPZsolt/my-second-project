@@ -20,14 +20,16 @@ for (let button of buttons) {
 
 /* The playGame function */
 function playGame(playerChoice) {
-    playerImage.src = `assets/images/${choices[playerChoice]}.webp`;
-    playerImage.alt = choices[playerChoice];
+    const playerIndex = parseInt(playerChoice);
+    playerImage.src = `assets/images/${choices[playerIndex]}.webp`;
+    playerImage.alt = choices[playerIndex];
 
-    let computerChoice = Math.floor(Math.random() * 3);
-    computerImage.src = `assets/images/${choices[computerChoice]}.webp`;
-    computerImage.alt = choices[computerChoice];
+    const computerChoiceIndex = Math.floor(Math.random() * 3);
+    const computerChoice = choices[computerChoiceIndex];
+    computerImage.src = `assets/images/${computerChoice}.webp`;
+    computerImage.alt = computerChoice;
 
-    let result = checkWinner(choices[computerChoice], choices[playerChoice]);
+    const result = checkWinner(playerIndex, computerChoiceIndex);
     updateScores(result);
 }
 
@@ -36,10 +38,10 @@ function playGame(playerChoice) {
  * if both choose the same item the result is going to be tie
  * otherwise the player or the computer wins 
  */
-function checkWinner(playerChoice, computerChoice) {
-    if (playerChoice === computerChoice) {
+function checkWinner(playerChoiceIndex, computerChoiceIndex) {
+    if (playerChoiceIndex === computerChoiceIndex) {
         return "tie";
-    } else if ((playerChoice === "rock" && computerChoice === "scissors") || (playerChoice === "paper" && computerChoice === "rock") || (playerChoice === "scissors" && computerChoice === "paper")) {
+    } else if ((playerChoiceIndex === 0 && computerChoiceIndex === 2) || (playerChoiceIndex === 1 && computerChoiceIndex === 0) || (playerChoiceIndex === 2 && computerChoiceIndex === 1)) {
         return "player";
     } else {
         return "computer";
