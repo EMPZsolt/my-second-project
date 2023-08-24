@@ -119,6 +119,7 @@ During the development, I used Google's developer tools to ensure everything wor
 - The JavaScript code did not want to work before the first run. When I reviewed the code, I found a typo in the constants.
 - With the appearance of the scissors symbol, the display size always became a little smaller. I solved the problem by resizing the image.
 - In the checkWinner function, I found a typo on the first look. I wrote the names of all the symbols in capital letters, when they should have been in small letters. Fortunately, it showed up during the first round of checks, so it didn't cause any problems when testing the game.
+- It was a big logical error with the checkWinnwer function. It worked the other way around as it should have. To fix it I made changes in the playGame function, I have converted the playerChoice to an index using parseInt, and I have directly generated the computerChoiceIndex instead of generating a random choice and then finding its index. After that in the checkWinner function, I have compared the indexes directly instead of comparing the choice strings. It solved the problem.
 ### W3C Validator
 The W3C validator was used to validate the HTML. It was also used to validate CSS in the style.css file.
 - No errors were returned when passing through the official [W3C HTML Validator](./assets/images/html-validator.webp)
