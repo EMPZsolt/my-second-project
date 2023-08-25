@@ -126,7 +126,7 @@ The W3C validator was used to validate the HTML. It was also used to validate CS
 - No errors were found when passing through the official [CSS Validator](./assets/images/css-validator.webp)
 ### JSHint JavaScript Validator
 The JSHint JavaScript Validator was used to validate the JavaScript code.
-- No errors were returned when passing through the official [JSHint JavaScript Validator](./assets/images/js-validator.webp), but 15 warnings appeared, the vast majority of which indicate that I am using a keyword introduced in the ECMAScript 6 (ES6) version, and on one occasion that I am using a function inside a loop, which can be confusing. Despite all this, the game works perfectly.
+- No errors were returned when passing through the official [JSHint JavaScript Validator](./assets/images/js-validator.webp).
 ### Lighthouse
 I used Lighthouse within the Chrome Developer Tools to allow me to test the performance, accessibility, best practices and SEO of the website.
 #### Index page
