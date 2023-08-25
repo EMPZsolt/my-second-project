@@ -122,3 +122,56 @@ footer {
   width: 55%;
   height: inherit;
 }
+
+/* For mobile sreen seizes from 360px wide and down */
+@media screen and (max-width: 360px) {
+
+  /*Header and footer*/
+
+  header {
+  height: 150px;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+
+  footer {
+    font-size: 12px;
+    min-height: 100px;
+  }
+
+  /*Game area*/
+
+  .game-area {
+    width: 90%;
+    padding-top: 2%;
+  }
+
+  .control {
+    margin: -1px;
+    width: 73px;
+    height: 40px;
+    font-size: 8px;
+  }
+
+  #messages {
+    margin-top: 4rem;
+    font-size: 1.2rem;
+  }
+
+  /* Actual game zone*/
+
+  .player {
+    font-size: 8px;
+  }
+  
+  .computer {
+    font-size: 8px;
+  }
+
+  #versus {
+    margin-left: 3%;
+    font-size: small;
+  }
+}
