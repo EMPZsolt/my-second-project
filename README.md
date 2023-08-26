@@ -21,6 +21,7 @@ The game users can relive their childhood and test their patience and luck durin
           * [How to Fork](#how-to-fork)
           * [How to Clone](#how-to-clone)
 - [Testing](#testing)
+     * [Test Scenarios and Results](#test-scenarios-and-results)
      * [Bugs](#bugs)
      * [W3C Validator](#w3c-validator)
      * [JSHint JavaScript Validator](#jshint-javascript-validator)
@@ -112,6 +113,21 @@ During the development, I used Google's developer tools to ensure everything wor
 - I confirmed that this game results are always correct.
 - I confirmed that this project is responsive, functions on all standard screen sizes using the devtools device toolbar.
 - I confirmed that the header, game options, game results and the footer are all readable and easy to understand.
+### Test Scenarios and Results
+
+| Page           | Test Description                                 | Test Result    |
+|----------------|--------------------------------------------------|----------------|
+| `index.html`   | Check if the game title is displayed correctly   | Passed         |
+|                | Test button functionality and game logic         | Passed         |
+|                | Verify the display of player and computer choices| Passed         |
+|                | Ensure correct score update for player wins       | Passed         |
+|                | Ensure correct score update for computer wins     | Passed         |
+|                | Verify tie scenarios are handled correctly       | Passed         |
+| `style.css`    | Check responsive design for various screen sizes | Passed         |
+| `script.js`    | Test player's choice processing and image update | Passed         |
+|                | Test computer's random choice generation         | Passed         |
+|                | Verify game result determination logic           | Passed         |
+|                | Check score update logic                         | Passed         |
 ### Bugs
 - The first time I changed the font, the text hung over one of the buttons in the game options. This is how I increased the original size settings of the buttons.
 - At first, I did not notice that the name of the score collector on both displays was "Your scores". Only after a few tests did the mistyping become apparent.
