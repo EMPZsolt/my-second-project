@@ -1,5 +1,5 @@
 # Rock - Paper - Scissors
-## [my-second-project](https://empzsolt.github.io/my-second-project-/)
+## [my-second-project](https://empzsolt.github.io/my-second-project/)
 The simple "Rock, Paper, Scissors" is an interesting game. As we used to settle disputes in the past, now it offers an easily accessible online entertainment. In its current version, the fight is against a randomly choosing computer, which ensures a fair game.
 
 The game users can relive their childhood and test their patience and luck during an easy game. It can help promote problem-solving thinking. Finally, it can cause happy moments for people of all ages.
@@ -84,7 +84,7 @@ Am I Responsive? - To show the website image on a range of devices.
 Paint - To cut the images to the right size.
 ## Deployment and Local Development
 ### Deployment
-The site is deployed using GitHub Pages. Visit the deployed site [here](https://empzsolt.github.io/my-second-project-/). To deploy using GitHub pages:
+The site is deployed using GitHub Pages. Visit the deployed site [here](https://empzsolt.github.io/my-second-project/). To deploy using GitHub pages:
  1. Login or Sign Up to GitHub.
  2. Open the project repository.
  3. Click on "Settings" on the navigation bar under the repository title.
@@ -97,12 +97,12 @@ The site is deployed using GitHub Pages. Visit the deployed site [here](https://
 #### How to Fork
 To fork the Rock - Paper - Scissors repository:
 1. Log in (or sign up) to Github.
-2. Go to the repository for this project, EMPZsolt/my-second-project-.
+2. Go to the repository for this project, EMPZsolt/my-second-project.
 3. Click the Fork button in the top right corner.
 #### How to Clone
 To clone the Rock - Paper - Scissors repository:
 Log in (or sign up) to GitHub.
-Go to the repository for this project, EMPZsolt/my-second-project-.
+Go to the repository for this project, EMPZsolt/my-second-project.
 Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
